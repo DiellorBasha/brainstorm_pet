@@ -1,0 +1,45 @@
+
+7.4.1
+setenv SUBJECTS_DIR /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer
+cd /export02/data/dbasha/PAD7/multimodal
+mri_gtmpvc --i /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/pet/18FNAV4694/template.mgz --reg /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/pet/18FNAV4694/template.reg.lta --psf 2.8 --seg gtmseg.mgz --default-seg-merge --auto-mask 1 .05 --mgx .25 --rescale 8 47 --save-input --o /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/pet/18FNAV4694/pvc --threads 16 
+sysname  Linux
+hostname cassius.bic-wks.mni.mcgill.ca
+machine  x86_64
+user     dbasha
+vgthresh   0.001000
+nReplace   18
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 
+Loading seg for gtm /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/mri/gtmseg.mgz
+Loading ctab /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/mri/gtmseg.ctab
+Reading /export02/data/dbasha/PAD7/multimodal/meg/derivatives/freesurfer/sub-MTL0002/mri/gtmseg.lta
+MEM: Size 468844  Peak: 979548   RSS: 332108  Data: 449588  Stk: 140
+MEM: Size 1517424  Peak: 1517424   RSS: 397636  Data: 517168  Stk: 140
+Data load time 14.8 sec
+nmask = 4252867, nsegs = 100, excluding segid=0
+FWHM: 2.8 2.8 2.8
+Std:  1.18905 1.18905 1.18905
+nPad 10, PadThresh 0.0001
+Segmentations used for rescaling
+   8 Left-Cerebellum-Cortex
+  47 Right-Cerebellum-Cortex
+MEM: Size 1450544  Peak: 1961776   RSS: 330936  Data: 450288  Stk: 140
+MEM: Size 4747912  Peak: 4747912   RSS: 589488  Data: 3747656  Stk: 140
+MEM: Size 4780708  Peak: 4780708   RSS: 622500  Data: 3780452  Stk: 140
+GTM-Build-time 13.7 sec
+MEM: Size 8170204  Peak: 8726904   RSS: 4607272  Data: 7764808  Stk: 140
+MEM: Size 8464504  Peak: 8726904   RSS: 4867812  Data: 8059108  Stk: 140
+GTM-Solve-Time 152.7 sec
+MEM: Size 8564184  Peak: 8726904   RSS: 4964792  Data: 8158788  Stk: 140
+MGX PVC
+done with mgxpvc
+nopvc multiplicative scale 0.936467
+rescale factor    0.036918496170947
+rvar = 0.352349
+XtX  Condition     9625.061 
+XtX  Condition     9625.061 
+VRF  Mean/Min/Max  30323.129  178.653 1666259.645 
+MEM: Size 5143076  Peak: 8726904   RSS: 1543492  Data: 4737680  Stk: 140
+#VMPC# mri_gtmpvc VmPeak  8726904
+mri_gtmpvc-runtime  3.78 min
+mri_gtmpvc done

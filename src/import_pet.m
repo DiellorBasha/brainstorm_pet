@@ -41,6 +41,47 @@ function [BstPetFile, sPet, Messages] = import_pet(iSubject, PetFile, FileFormat
 
 %% ===== PARSE INPUTS =====
 
+if (nargin < 3) || isempty(FileFormat)
+    FileFormat = 'ALL';
+end
+if (nargin < 4) || isempty(isInteractive)
+    isInteractive = 0;
+end
+if (nargin < 5) || isempty(isAutoAdjust)
+    isAutoAdjust = 1;
+end
+if (nargin < 6) || isempty(Comment)
+    Comment = [];
+end
+if (nargin < 7) || isempty(Labels)
+    Labels = [];
+end
+
+% Initialize returned variables
+BstMriFile = [];
+sMri = [];
+Messages = [];
+% Get Protocol information
+ProtocolInfo     = bst_get('ProtocolInfo');
+ProtocolSubjects = bst_get('ProtocolSubjects');
+% Default subject
+if (iSubject == 0)
+	sSubject = ProtocolSubjects.DefaultSubject;
+% Normal subject 
+else
+    sSubject = ProtocolSubjects.Subject(iSubject);
+end
+% Volume type
+volType = 'MRI';
+if ~isempty(strfind(Comment, 'CT'))
+    volType = 'CT';
+end
+% Get node comment from filename
+if ~isempty(strfind(Comment, 'Import'))
+    Comment = [];
+end
+
+
 %% ===== SELECT PET FILE =====
 
 %% ===== EXTRACT PET FRAMES =====
