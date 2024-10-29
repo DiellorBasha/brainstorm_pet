@@ -10,7 +10,7 @@ classdef test_import_pet_gunzip < matlab.unittest.TestCase
     methods (TestMethodSetup)
         function loadTestFiles(testCase)
             % Load all .nii and .nii.gz files in the TestDataDir
-            files = dir(fullfile(testCase.TestDataDir, '*.nii*'));
+            files = dir(fullfile(testCase.TestDataDir, '*.gz*'));
             testCase.TestFiles = arrayfun(@(f) fullfile(f.folder, f.name), files, 'UniformOutput', false);
         end
     end
