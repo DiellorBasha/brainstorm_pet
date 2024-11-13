@@ -39,6 +39,24 @@
       </propertySet>
       <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="1967aa04-dd27-4e21-a123-d1711c723329"/>
     </prototypes>
+    <prototypes type="systemcomposer.profile.Prototype" uuid="7de2d0b5-15db-498c-893b-a56e7a3791e8">
+      <appliesTo>Component</appliesTo>
+      <componentHeaderColor type="systemcomposer.profile.RGBValueStruct">
+        <BLUE>238</BLUE>
+        <GREEN>190</GREEN>
+        <RED>77</RED>
+      </componentHeaderColor>
+      <icon>CUSTOM</icon>
+      <p_customIcon>C:\Users\diell\OneDrive - McGill University\6.Code\brainstorm projects\pet_integration_matlab\app\assets\brainstorm bs logo_ex-01-01.png</p_customIcon>
+      <p_Name>bst_core</p_Name>
+      <defaultStereotypeMap type="systemcomposer.profile.DefaultStereotypeMap" uuid="695931b3-68be-452e-b1b9-e4b1d23b86e7"/>
+      <metaAttributes type="mf.zero.meta.AttributeMap" uuid="13f36904-8719-4838-b115-4a0daaf1ca55"/>
+      <propertySet type="systemcomposer.property.PropertySet" uuid="8b708d64-945b-4425-b7ee-24e3265a7fcd">
+        <p_Name>bst_core</p_Name>
+        <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="0ceecfa8-9835-47ee-8f81-409255429ae6"/>
+      </propertySet>
+      <elemProxy type="systemcomposer.services.proxy.ProxyTarget" uuid="81e716b3-d519-4472-876e-f9866aeb2995"/>
+    </prototypes>
     <prototypes type="systemcomposer.profile.Prototype" uuid="09a500b2-ac97-4b1b-b4db-1978ae65ef56">
       <appliesTo>Component</appliesTo>
       <componentHeaderColor type="systemcomposer.profile.RGBValueStruct">
@@ -430,6 +448,7 @@
     <URI>pet_integration_profile</URI>
     <modelType>PROFILE_MODEL</modelType>
   </systemcomposer.services.proxy.ModelIdentifier>
+  <systemcomposer.property.UnitQueryClientWrapper type="systemcomposer.property.UnitQueryClientWrapper" uuid="92ceeeba-2002-43bb-9560-b1b8de66bdbd"/>
   <systemcomposer.services.proxy.ModelResolver type="systemcomposer.services.proxy.ModelResolver" uuid="62803e9d-f791-4e41-9b93-a6818360593e">
     <Proxies type="systemcomposer.services.proxy.BidirectionalProxy" uuid="60ff551e-345d-4077-a8fb-766cc1d1f2c5">
       <Source type="systemcomposer.services.proxy.ProxySource" uuid="6d464616-446b-429f-b373-2b8f1178a890"/>
@@ -444,7 +463,6 @@
     <modelType>PROFILE_MODEL</modelType>
     <URI>pet_integration_profile</URI>
   </systemcomposer.services.proxy.ModelResolver>
-  <systemcomposer.property.UnitQueryClientWrapper type="systemcomposer.property.UnitQueryClientWrapper" uuid="92ceeeba-2002-43bb-9560-b1b8de66bdbd"/>
   <systemcomposer.services.proxy.ModelResolver type="systemcomposer.services.proxy.ModelResolver" uuid="7ec27fb9-7620-44ed-bec5-e06a972afce4">
     <Proxies type="systemcomposer.services.proxy.UnidirectionalProxy" uuid="154dc5b3-1301-491f-a2ba-d1219cfc7517">
       <Source type="systemcomposer.services.proxy.ProxySource" uuid="fdf37144-ccbd-4ce8-9dc2-928eb52fe773"/>
