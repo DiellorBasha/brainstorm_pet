@@ -11,7 +11,8 @@ import matlab.unittest.plugins.codecoverage.CoberturaFormat
 
 testFile = 'test_import_pet_gunzip.m';
 sourceCodeFile = which('import_pet_gunzip.m');
-suite = testsuite(testFile);
+
+suite = testsuite("PropertiesTest")
 
 % Check if brainstorm is running before doing tests
 % Start Brainstorm if not already open
@@ -20,6 +21,9 @@ suite = testsuite(testFile);
           if isempty(bst_get ('isGUI'))
               brainstorm
           end
+results = run(suite);
+
+%% 
 
 runner = TestRunner.withTextOutput;
 runner.addPlugin(CodeCoveragePlugin.forFile(sourceCodeFile))
