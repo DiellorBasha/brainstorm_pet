@@ -37,8 +37,8 @@ classdef Test_db_template < matlab.unittest.TestCase
 
             % Check if Brainstorm is running
             testCase.assertTrue(bst_get('isGUI'));
-            testCase.verifyEqual(actual, expected, diagnostic);
-            testCase.verifyEmpty(actual, expected, diagnostic);
+            testCase.verifyEqual(actual, expected);
+            testCase.verifyEmpty(actual, diagnostic);
 
         end
     end
